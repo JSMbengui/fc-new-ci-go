@@ -1,0 +1,26 @@
+{
+  "name": "ci",
+  "version": "1.0.0",
+  "description": "A **Integração Contínua** é o processo de integrar modificações no *codebase* de forma **contínua e automatizada**. Isso evita erros humanos na verificação, garantindo mais **agilidade** e **segurança** no desenvolvimento de software.",
+  "main": "commitlint.config.js",
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
